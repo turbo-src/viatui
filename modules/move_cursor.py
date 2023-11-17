@@ -1,4 +1,5 @@
 import pyautogui
+import time
 
 # Calculate the coordinates
 grid_size = 100  # Grid size in pixels
@@ -10,3 +11,9 @@ y_coordinate = row_index * grid_size
 
 # Move the cursor to the specified vertex
 pyautogui.moveTo(x_coordinate, y_coordinate)
+
+# Optional: a short pause to see the cursor move before the click
+time.sleep(1)
+
+# Click at the current position
+pyautogui.click()
