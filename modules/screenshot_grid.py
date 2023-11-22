@@ -6,9 +6,9 @@ def take_screenshot():
     Captures a screenshot of the current screen.
     Uncomment the return statement below when using pyautogui in your local environment.
     """
-    # return screenshot()
+    return screenshot()
     # For demonstration, returning a placeholder white image
-    return Image.new("RGB", (800, 600), "white")
+    #return Image.new("RGB", (800, 600), "white")
 
 def draw_grid(image, grid_size):
     """

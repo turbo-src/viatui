@@ -13,7 +13,7 @@ y_coordinate = row_index * grid_size
 pyautogui.moveTo(x_coordinate, y_coordinate)
 
 # Optional: a short pause to see the cursor move before the click
-time.sleep(1)
-
-# Click at the current position
-pyautogui.click()
+#time.sleep(1)
+#
+## Click at the current position
+#pyautogui.click()

@@ -9,7 +9,7 @@ include = ["modules/*"]
 [tool.poetry.dependencies]
 python = "^3.8"
 pyautogui = "^0.9.53"
-Pillow = "^8.3.1"
+Pillow = "^9.2.0"
 # Add other dependencies here
 
 [build-system]
