@@ -22,6 +22,23 @@ This README provides instructions on how to set up a virtual screen on an Arch L
 
 2. **Configure and Start the VNC Server:**
 
+   ```
+   ```
+
+   ```
+   vncpasswd
+   ```
+
+   The setup flow looks like this:
+
+   ```
+   Password:
+   Verify:
+   Would you like to enter a view-only password (y/n)? n
+   A view-only password is not used
+   ```
+
+
    Start the VNC server with a specific resolution:
 
    ```
