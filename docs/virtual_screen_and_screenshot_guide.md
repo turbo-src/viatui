@@ -18,6 +18,8 @@ This README provides instructions on how to set up a virtual screen on an Arch L
    sudo pacman -S tigervnc
    ```
 
+   sudo pacman -S xorg-server-xvfb xorg-server-xephyr tigervnc
+
    Replace `tigervnc` with your preferred VNC server if necessary.
 
 2. **Configure and Start the VNC Server:**
@@ -38,6 +40,17 @@ This README provides instructions on how to set up a virtual screen on an Arch L
    A view-only password is not used
    ```
 
+   The password is encoded somehow and saved in
+
+   ```
+   ~/.vnc/passwd
+   ```
+
+   I saved my raw password for reference in the project:
+
+   ```
+   .vncpassword
+   ```
 
    Start the VNC server with a specific resolution:
 
