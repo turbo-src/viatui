@@ -1,12 +1,12 @@
-# Virtual Screen and Screenshot Guide
+# Virtual Screen and Screenshot Guide for Arch Linux
 
-These are instructions on how to set up a virtual screen on a Linux system and capture its screenshot using Python and PyAutoGUI.
+This README provides instructions on how to set up a virtual screen on an Arch Linux system and capture its screenshot using Python and PyAutoGUI.
 
 ## Setting Up a Virtual Screen
 
 ### Requirements
 
-- Linux system with X11
+- Arch Linux system with X11
 - VNC Server (e.g., TigerVNC)
 
 ### Installation and Configuration
@@ -14,9 +14,11 @@ These are instructions on how to set up a virtual screen on a Linux system and c
 1. **Install a VNC Server:**
 
    ```
-   sudo apt-get update
-   sudo apt-get install tigervnc-standalone-server
+   sudo pacman -Syu
+   sudo pacman -S tigervnc
    ```
+
+   Replace `tigervnc` with your preferred VNC server if necessary.
 
 2. **Configure and Start the VNC Server:**
 
