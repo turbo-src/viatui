@@ -6,33 +6,33 @@ from modules.screenshot_grid import create_screenshot_with_grid
 # os.environ['DISPLAY'] = ':1'
 
 if __name__ == '__main__':
-  # Click on settings menu (triple dots in a row)
-  pyautogui.moveTo(1080, 8)
-  pyautogui.click()
-  time.sleep(3)
-  screenshot = create_screenshot_with_grid(50)
-  screenshot.save('chromium-nix-screenshots/1.png')
-
   ## Click on settings menu (triple dots in a row)
-  pyautogui.moveTo(995, 95)
-  pyautogui.click()
-  time.sleep(3)
-  screenshot = create_screenshot_with_grid(50)
-  screenshot.save('chromium-nix-screenshots/2.png')
+  #pyautogui.moveTo(1080, 8)
+  #pyautogui.click()
+  #time.sleep(3)
+  #screenshot = create_screenshot_with_grid(50)
+  #screenshot.save('chromium-nix-screenshots/1.png')
+
+  ### Click on settings menu (triple dots in a row)
+  #pyautogui.moveTo(995, 95)
+  #pyautogui.click()
+  #time.sleep(3)
+  #screenshot = create_screenshot_with_grid(50)
+  #screenshot.save('chromium-nix-screenshots/2.png')
 
   ## Click on `Extensions`
-  #pyautogui.moveTo(700, 283)
+  #pyautogui.moveTo(725, 312)
   #pyautogui.click()
   #time.sleep(3)
   #screenshot = create_screenshot_with_grid(50)
-  #screenshot.save('chrome-screenshot5.png')
+  #screenshot.save('chromium-nix-screenshots/3.png')
 
   ## Click on `Manage Extensions`
-  #pyautogui.moveTo(550, 283)
-  #pyautogui.click()
-  #time.sleep(3)
-  #screenshot = create_screenshot_with_grid(50)
-  #screenshot.save('chrome-screenshot6.png')
+  pyautogui.moveTo(550, 312)
+  pyautogui.click()
+  time.sleep(3)
+  screenshot = create_screenshot_with_grid(50)
+  screenshot.save('chromium-nix-screenshots/4.png')
 
   ## Switch 'Developer Mode' on
   #pyautogui.moveTo(985, 112)
