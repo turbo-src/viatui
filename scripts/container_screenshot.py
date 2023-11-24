@@ -6,15 +6,20 @@ from modules.screenshot_grid import create_screenshot_with_grid
 # os.environ['DISPLAY'] = ':1'
 
 if __name__ == '__main__':
-  screenshot = create_screenshot_with_grid(100)
-  screenshot.save('chrome-screenshot1.png')
+  # Click on settings menu (triple dots in a row)
+  pyautogui.moveTo(1080, 8)
+  pyautogui.click()
+  time.sleep(3)
+  screenshot = create_screenshot_with_grid(50)
+  screenshot.save('chromium-nix-screenshots/1.png')
 
   ## Click on settings menu (triple dots in a row)
-  #pyautogui.moveTo(975, 65)
-  #pyautogui.click()
-  #time.sleep(3)
-  #screenshot = create_screenshot_with_grid(50)
-  #screenshot.save('chrome-screenshot4.png')
+  pyautogui.moveTo(975, 65)
+  pyautogui.click()
+  time.sleep(3)
+  screenshot = create_screenshot_with_grid(50)
+  screenshot.save('chrome-screenshot4.png')
+  screenshot.save('chromium-nix-screenshots/2.png')
 
   ## Click on `Extensions`
   #pyautogui.moveTo(700, 283)
@@ -89,13 +94,13 @@ if __name__ == '__main__':
   #screenshot.save('chrome-screenshot14.png')
 
   ## Type in github url into bar
-  pyautogui.moveTo(200, 75)
-  pyautogui.click()
-  pyautogui.typewrite('github.com/7db9a/demo/pulls')
-  pyautogui.press('enter')
-  time.sleep(5)
-  screenshot = create_screenshot_with_grid(100)
-  screenshot.save('chrome-screenshot15.png')
+  #pyautogui.moveTo(200, 75)
+  #pyautogui.click()
+  #pyautogui.typewrite('github.com/7db9a/demo/pulls')
+  #pyautogui.press('enter')
+  #time.sleep(5)
+  #screenshot = create_screenshot_with_grid(100)
+  #screenshot.save('chromium-nix-screenshots/15.png')
 
 
   #######################################################

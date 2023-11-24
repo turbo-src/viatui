@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Start Xvfb
-Xvfb :1 -screen 0 1366x768x24 &
+Xvfb :1 -screen 0 1024x768x24 &
 
 # Wait for Xvfb to start
 while ! xdpyinfo -display :1 > /dev/null 2>&1; do

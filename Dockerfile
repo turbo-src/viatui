@@ -83,6 +83,8 @@ ENV DISPLAY=:1
 
 # Copy the entrypoint script into the container
 COPY entrypoint.sh /entrypoint.sh
+
+# RUN entrypoint script
 RUN chmod +x /entrypoint.sh
 
 # Set the entrypoint script to be executed
