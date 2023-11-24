@@ -32,14 +32,23 @@ docker build -t viatui .
 ```
 
 ```
-docker run -it -v $(pwd):/app viatui
+docker run -it \
+    -e DISPLAY=:1 \
+    --volume /tmp/.X11-unix:/tmp/.X11-unix \
+    --volume /var/run/dbus:/var/run/dbus \
+    --volume $(pwd):/app \
+    --privileged \
+    viatui
+
 ```
 
 ```
 docker exec -it <container_id> /bin/bash
 ```
 
-Run google-chrome from container (see entrypoint.sh commented out code)
+```
+google-chrome --no-sandbox
+```
 
 ## License
 
