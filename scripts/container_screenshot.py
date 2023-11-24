@@ -73,12 +73,12 @@ if __name__ == '__main__':
   #screenshot = create_screenshot_with_grid(100)
   #screenshot.save('chromium-nix-screenshots/9.png')
 
-  ## Pin turbo-src extension
-  #pyautogui.moveTo(825, 212)
-  #pyautogui.click()
-  #time.sleep(3)
-  #screenshot = create_screenshot_with_grid(100)
-  #screenshot.save('chrome-screenshot12.png')
+  # Pin turbo-src extension
+  pyautogui.moveTo(800, 250)
+  pyautogui.click()
+  time.sleep(3)
+  screenshot = create_screenshot_with_grid(100)
+  screenshot.save('chromium-nix-screenshots/10.png')
 
   ## Get out of Extensions pin selection box
   #pyautogui.press('esc')
