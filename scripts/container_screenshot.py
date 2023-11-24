@@ -35,7 +35,7 @@ if __name__ == '__main__':
   screenshot.save('chromium-nix-screenshots/4.png')
 
   # Switch 'Developer Mode' on
-  pyautogui.moveTo(1000, 182)
+  pyautogui.moveTo(1000, 200)
   pyautogui.click()
   time.sleep(3)
   screenshot = create_screenshot_with_grid(50)

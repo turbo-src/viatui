@@ -1,5 +1,5 @@
 # Use an official Ubuntu runtime as a parent image
-FROM ubuntu:latest
+FROM ubuntu:23.10
 
 # Set the timezone
 RUN ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
@@ -28,8 +28,9 @@ RUN groupadd -r nixbld && \
         useradd -c "Nix build user $i" -d /var/empty -g nixbld -G nixbld -M -N -r -s "$(which nologin)" nixbld$i; \
     done
 
-# Install Nix in single-user mode
-RUN curl -L https://nixos.org/nix/install | sh
+# Install Nix 2.19.1 in single-user mode
+#RUN curl -L https://nixos.org/nix/install | sh
+RUN curl -L https://releases.nixos.org/nix/nix-2.19.1/install | sh
 
 # Set up environment for Nix
 ENV PATH=/root/.nix-profile/bin:$PATH
