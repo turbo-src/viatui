@@ -14,11 +14,10 @@ if __name__ == '__main__':
   screenshot.save('chromium-nix-screenshots/1.png')
 
   ## Click on settings menu (triple dots in a row)
-  pyautogui.moveTo(975, 65)
+  pyautogui.moveTo(995, 95)
   pyautogui.click()
   time.sleep(3)
   screenshot = create_screenshot_with_grid(50)
-  screenshot.save('chrome-screenshot4.png')
   screenshot.save('chromium-nix-screenshots/2.png')
 
   ## Click on `Extensions`
