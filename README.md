@@ -45,13 +45,13 @@ docker build -t viatui .
 
 ```
 docker run -it \
+    -m 512m \
     -e DISPLAY=:1 \
     --volume /tmp/.X11-unix:/tmp/.X11-unix \
     --volume /var/run/dbus:/var/run/dbus \
     --volume $(pwd):/app \
     --privileged \
     viatui
-
 ```
 
 ```
@@ -59,8 +59,12 @@ docker exec -it <container_id> /bin/bash
 ```
 
 ```
-google-chrome --no-sandbox
+google-chrome --no-sandbox --disable-dbus --disable-gpu --disable-software-rasterizer --disable-dev-shm-usage
 ```
+
+If you don't run the disable flags (at least certain ones), you'll gets some errors related to graphics that prevent dynamic websites from loading (error code SIGTRAP)
+
+
 
 ## License
 
