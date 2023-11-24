@@ -28,18 +28,18 @@ if __name__ == '__main__':
   #screenshot.save('chromium-nix-screenshots/3.png')
 
   ## Click on `Manage Extensions`
-  pyautogui.moveTo(550, 312)
-  pyautogui.click()
-  time.sleep(3)
-  screenshot = create_screenshot_with_grid(50)
-  screenshot.save('chromium-nix-screenshots/4.png')
-
-  ## Switch 'Developer Mode' on
-  #pyautogui.moveTo(985, 112)
+  #pyautogui.moveTo(550, 312)
   #pyautogui.click()
   #time.sleep(3)
   #screenshot = create_screenshot_with_grid(50)
-  #screenshot.save('chrome-screenshot7.png')
+  #screenshot.save('chromium-nix-screenshots/4.png')
+
+  ## Switch 'Developer Mode' on
+  #pyautogui.moveTo(1000, 182)
+  #pyautogui.click()
+  #time.sleep(3)
+  #screenshot = create_screenshot_with_grid(50)
+  #screenshot.save('chromium-nix-screenshots/5.png')
 
   ## Click 'Load unpacked'
   #pyautogui.moveTo(100 , 175)
