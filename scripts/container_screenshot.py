@@ -55,18 +55,16 @@ if __name__ == '__main__':
   screenshot = create_screenshot_with_grid(50)
   screenshot.save('chromium-nix-screenshots/7.png')
 
-  ## Click 'dist-chrome-extension
+  # Click 'dist-chrome-extension
   pyautogui.moveTo(200, 150)
   pyautogui.doubleClick()
   time.sleep(2)
+  pyautogui.moveTo(350, 50)
+  pyautogui.click()
+  pyautogui.press('enter')
+  time.sleep(3)
   screenshot = create_screenshot_with_grid(50)
-  screenshot.save('chromium-nix-screenshots/8interim.png')
-  #pyautogui.moveTo(350, 50)
-  #pyautogui.click()
-  #pyautogui.press('enter')
-  #time.sleep(3)
-  #screenshot = create_screenshot_with_grid(50)
-  #screenshot.save('chromium-nix-screenshots/8.png')
+  screenshot.save('chromium-nix-screenshots/8.png')
 
   ## Click extension button
   #pyautogui.moveTo(890, 60)
