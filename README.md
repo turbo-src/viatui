@@ -25,6 +25,22 @@
 - Automate UI interactions based on LLM analysis.
 - Develop methods for intelligent, automated UI testing.
 
+## Usage
+
+```
+docker build -t viatui .
+```
+
+```
+docker run -it -v $(pwd):/app viatui
+```
+
+```
+docker exec -it <container_id> /bin/bash
+```
+
+Run google-chrome from container (see entrypoint.sh commented out code)
+
 ## License
 
 This project is licensed under the MIT License.
