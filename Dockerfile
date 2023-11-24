@@ -29,8 +29,21 @@ RUN curl -sSL https://install.python-poetry.org | python3 -
 
 COPY pyproject.toml .
 COPY poetry.lock .
+WORKDIR /app/modules
+WORKDIR /app
+COPY modules/__init__.py modules/
 
 RUN ~/.local/bin/poetry install
+
+#COPY fluxbox/init /root/.fluxbox/init
+#COPY fluxbox/menu /root/.fluxbox/menu
+#COPY fluxbox/keys /root/.fluxbox/keys
+#COPY fluxbox/startup /root/.fluxbox/startup
+#COPY fluxbox/apps /root/.fluxbox/apps
+#COPY fluxbox/slitlist /root/.fluxbox/slitlist
+#COPY fluxbox/styles/Default /root/.fluxbox/styles/Default
+#COPY fluxvox/overlay /root/.fluxbox/overlay
+
 
 # Set environment v   ariable
 ENV DISPLAY=:1
@@ -40,6 +53,9 @@ ENV DISPLAY=:1
 
 # Run x11vnc when the container launches
 #CMD Xvfb :1 -screen 0 1024x768x16 & x11vnc -display :1 -forever
+
+RUN apt-get update && apt-get install -y dbus-x11 x11-apps
+#RUN dbus-uuidgen > /var/lib/dbus/machine-id
 
 # Copy the entrypoint script into the container
 COPY entrypoint.sh /entrypoint.sh
