@@ -1,9 +1,6 @@
 # Use an official Ubuntu runtime as a parent image
 FROM ubuntu:latest
 
-# Set the working directory in the container to /app
-WORKDIR /app
-
 # Set the timezone
 RUN ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
 
@@ -18,9 +15,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y tzdata &
     curl \
     scrot \
     python3-tk \
-    python3-dev
-
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
+    python3-dev \
     git \
     xz-utils
 
@@ -39,8 +34,6 @@ RUN curl -L https://nixos.org/nix/install | sh
 # Set up environment for Nix
 ENV PATH=/root/.nix-profile/bin:$PATH
 
-WORKDIR /
-
 # Perform a shallow clone of the Nixpkgs repository at a specific commit
 # Replace 'your_commit_hash' with the actual commit hash
 RUN git clone --depth 1 --branch master https://github.com/NixOS/nixpkgs.git && \
@@ -56,15 +49,15 @@ RUN nix-env -f /nixpkgs -iA chromium
 WORKDIR /app
 
 # Install Poetry
-#RUN curl -sSL https://install.python-poetry.org | python3 -
-#
-#COPY pyproject.toml .
-#COPY poetry.lock .
-#WORKDIR /app/modules
-#WORKDIR /app
-#COPY modules/__init__.py modules/
-#
-#RUN ~/.local/bin/poetry install
+RUN curl -sSL https://install.python-poetry.org | python3 -
+
+COPY pyproject.toml .
+COPY poetry.lock .
+WORKDIR /app/modules
+WORKDIR /app
+COPY modules/__init__.py modules/
+
+RUN ~/.local/bin/poetry install
 
 #COPY fluxbox/init /root/.fluxbox/init
 #COPY fluxbox/menu /root/.fluxbox/menu
