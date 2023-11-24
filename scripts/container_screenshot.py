@@ -36,3 +36,10 @@ if __name__ == '__main__':
   #time.sleep(3)
   #screenshot = create_screenshot_with_grid(50)
   #screenshot.save('chrome-screenshot6.png')
+
+  ## Switch 'Developer Mode' on
+  #pyautogui.moveTo(985, 112)
+  #pyautogui.click()
+  #time.sleep(3)
+  #screenshot = create_screenshot_with_grid(50)
+  #screenshot.save('chrome-screenshot7.png')
