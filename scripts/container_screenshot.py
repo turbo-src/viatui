@@ -42,11 +42,11 @@ if __name__ == '__main__':
   #screenshot.save('chromium-nix-screenshots/5.png')
 
   ## Click 'Load unpacked'
-  #pyautogui.moveTo(100 , 175)
-  #pyautogui.click()
-  #time.sleep(3)
-  #screenshot = create_screenshot_with_grid(50)
-  #screenshot.save('chrome-screenshot8.png')
+  pyautogui.moveTo(100 , 250)
+  pyautogui.click()
+  time.sleep(3)
+  screenshot = create_screenshot_with_grid(50)
+  screenshot.save('chromium-nix-screenshots/6.png')
 
   ## Click 'app' directory
   #pyautogui.moveTo(50, 150)
