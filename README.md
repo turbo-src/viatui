@@ -27,6 +27,18 @@
 
 ## Usage
 
+new X server instance on DISPLAY=:1
+
+```
+Xorg :1 -nolisten tcp&
+```
+
+```
+xhost +
+```
+
+Remember to restrict permissions again with xhost - after you're done, as this command disables access control and can pose a security risk.
+
 ```
 docker build -t viatui .
 ```
