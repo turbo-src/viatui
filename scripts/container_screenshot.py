@@ -168,6 +168,32 @@ if __name__ == '__main__':
   #screenshot = create_screenshot_with_grid(100)
   #screenshot.save('chromium-nix-screenshots/20.png')
 
+  ## Switch back to target page
+  #pyautogui.hotkey('alt', '2')
+  #screenshot = create_screenshot_with_grid(100)
+  #screenshot.save('chromium-nix-screenshots/21.png')
+
+  ## Click on turbo-src extension
+  #pyautogui.moveTo(825, 100)
+  #pyautogui.click()
+  #time.sleep(3)
+  #screenshot = create_screenshot_with_grid(100)
+  #screenshot.save('chromium-nix-screenshots/22.png')
+
+  ## Click turbo-src 'continue to add repo to TurboSrc' button
+  #pyautogui.moveTo(700, 450)
+  #pyautogui.click()
+  #time.sleep(3)
+  #screenshot = create_screenshot_with_grid(100)
+  #screenshot.save('chromium-nix-screenshots/23.png')
+
+  ## Click turbo-src 'create repo' button
+  #pyautogui.moveTo(700, 500)
+  #pyautogui.click()
+  #time.sleep(3)
+  #screenshot = create_screenshot_with_grid(100)
+  #screenshot.save('chromium-nix-screenshots/24.png')
+
   #######################################################
   # Useful info
   ######################################################
