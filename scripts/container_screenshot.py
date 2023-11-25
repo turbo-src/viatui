@@ -154,6 +154,20 @@ if __name__ == '__main__':
   #screenshot = create_screenshot_with_grid(100)
   #screenshot.save('chromium-nix-screenshots/18.png')
 
+  ## Click on turbo-src extension
+  #pyautogui.moveTo(825, 100)
+  #pyautogui.click()
+  #time.sleep(3)
+  #screenshot = create_screenshot_with_grid(100)
+  #screenshot.save('chromium-nix-screenshots/19.png')
+
+  ## Click turbo-src 'continue with' button
+  #pyautogui.moveTo(600, 375)
+  #pyautogui.click()
+  #time.sleep(3)
+  #screenshot = create_screenshot_with_grid(100)
+  #screenshot.save('chromium-nix-screenshots/20.png')
+
   #######################################################
   # Useful info
   ######################################################
