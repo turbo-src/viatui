@@ -1,5 +1,5 @@
 dist/
-modules/
+modules/__pycache__
 load_extension_images/
 .vncpassword
 fluxbox/
