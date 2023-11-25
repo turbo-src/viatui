@@ -206,6 +206,18 @@ if __name__ == '__main__':
   #screenshot = create_screenshot_with_grid(100)
   #screenshot.save('chromium-nix-screenshots/26.png')
 
+  ## Load vote buttons (reload page)
+  #pyautogui.hotkey('ctrl', 'r')
+  #time.sleep(7)
+  #screenshot = create_screenshot_with_grid(100)
+  #screenshot.save('chromium-nix-screenshots/26.png')
+
+  ## Scroll down to see all vote buttons
+  #pyautogui.scroll(-2)
+  #time.sleep(3)
+  #screenshot = create_screenshot_with_grid(100)
+  #screenshot.save('chromium-nix-screenshots/27.png')
+
   #######################################################
   # Useful info
   ######################################################
