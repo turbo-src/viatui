@@ -9,13 +9,13 @@ while ! xdpyinfo -display :1 > /dev/null 2>&1; do
 done
 
 # Start x11vnc
-#x11vnc -display :1 -forever -usepw -create &
+x11vnc -display :1 -forever -usepw -create &
 
 # Start Fluxbox (or any other window manager)
 fluxbox &
 
 # Set the DISPLAY environment variable
-#export DISPLAY=:1
+export DISPLAY=:1
 
 # Start Chromium in the background
 chromium --no-sandbox --disable-dbus --disable-gpu --disable-software-rasterizer --disable-dev-shm-usage &
