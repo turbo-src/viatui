@@ -1,6 +1,7 @@
 import pyautogui
 import time
 from modules.screenshot_grid import create_screenshot_with_grid
+from modules.get_from_viatuix_config import get_from_viatuix_config
 
 # Set the DISPLAY environment variable if necessary
 # os.environ['DISPLAY'] = ':1'
@@ -101,6 +102,40 @@ if __name__ == '__main__':
   screenshot = create_screenshot_with_grid(100)
   screenshot.save('chromium-nix-screenshots/13.png')
 
+  # Type in github url into bar
+  pyautogui.moveTo(200, 75)
+  pyautogui.click()
+  pyautogui.typewrite('github.com/login')
+  pyautogui.press('enter')
+  time.sleep(5)
+  screenshot = create_screenshot_with_grid(100)
+  screenshot.save('chromium-nix-screenshots/13.png')
+
+  ghusername = get_from_viatuix_config('viatuix.json', 'ghusername')
+  ghpassword = get_from_viatuix_config('viatuix.json', 'ghpassword')
+
+  # Type in username
+  pyautogui.moveTo(414, 353)
+  pyautogui.click()
+  pyautogui.typewrite(ghusername)
+  time.sleep(5)
+  screenshot = create_screenshot_with_grid(100)
+  screenshot.save('chromium-nix-screenshots/14.png')
+
+  # Type in password
+  pyautogui.moveTo(423, 425)
+  pyautogui.click()
+  pyautogui.typewrite(ghpassword)
+  time.sleep(5)
+  screenshot = create_screenshot_with_grid(100)
+  screenshot.save('chromium-nix-screenshots/15.png')
+
+  # Submit username and password
+  pyautogui.moveTo(502, 477)
+  pyautogui.click()
+  time.sleep(5)
+  screenshot = create_screenshot_with_grid(100)
+  screenshot.save('chromium-nix-screenshots/16.png')
 
   #######################################################
   # Useful info
@@ -110,4 +145,4 @@ if __name__ == '__main__':
   #pyautogui.hotkey('ctrl', 'r')
   #pyautogui.moveTo(625, 100)
   #pyautogui.click()
-  
+
