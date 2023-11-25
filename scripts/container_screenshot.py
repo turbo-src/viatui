@@ -209,6 +209,13 @@ if __name__ == '__main__':
   screenshot = create_screenshot_with_grid(100)
   screenshot.save('chromium-nix-screenshots/27.png')
 
+  ## Click vote button for pull request 4
+  pyautogui.moveTo(100, 355)
+  pyautogui.click()
+  time.sleep(3)
+  screenshot = create_screenshot_with_grid(100)
+  screenshot.save('chromium-nix-screenshots/28.png')
+
   #######################################################
   # Useful info
   ######################################################
