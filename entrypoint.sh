@@ -20,7 +20,7 @@ export DISPLAY=:1
 # Start Chromium in the background
 chromium --no-sandbox --disable-dbus --disable-gpu --disable-software-rasterizer --disable-dev-shm-usage &
 
-sleep 7
+sleep 15
 
 # Run script to interact with Chromium. Saves to 'chromium-nix-screenshots/'
 ~/.local/bin/poetry run python scripts/container_screenshot.py &
