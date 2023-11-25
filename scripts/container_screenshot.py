@@ -1,6 +1,7 @@
 import pyautogui
 import time
 from modules.screenshot_grid import create_screenshot_with_grid
+from modules.screenshot_grid import create_screenshot
 from modules.get_from_viatuix_config import get_from_viatuix_config
 
 # Set the DISPLAY environment variable if necessary
@@ -215,6 +216,20 @@ if __name__ == '__main__':
   time.sleep(3)
   screenshot = create_screenshot_with_grid(100)
   screenshot.save('chromium-nix-screenshots/28.png')
+
+  # Vote yes
+  pyautogui.moveTo(400, 400)
+  pyautogui.click()
+  time.sleep(3)
+  screenshot = create_screenshot_with_grid(100)
+  screenshot.save('chromium-nix-screenshots/29.png')
+
+  # Get out of modal
+  pyautogui.moveTo(900, 300)
+  pyautogui.click()
+  time.sleep(3)
+  screenshot = create_screenshot()
+  screenshot.save('chromium-nix-screenshots/30.png')
 
   #######################################################
   # Useful info

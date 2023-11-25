@@ -60,3 +60,10 @@ def create_screenshot_with_grid(grid_size):
     draw_grid(image, grid_size)
     label_vertices(image, grid_size)
     return image
+
+def create_screenshot():
+    """
+    Creates a screenshot.
+    """
+    image = take_screenshot()
+    return image
