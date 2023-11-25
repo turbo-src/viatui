@@ -58,7 +58,7 @@ if __name__ == '__main__':
   screenshot.save('chromium-nix-screenshots/7.png')
 
   # Click 'dist-chrome-extension
-  pyautogui.moveTo(200, 150)
+  pyautogui.moveTo(200, 130)
   pyautogui.doubleClick()
   time.sleep(2)
   pyautogui.moveTo(350, 50)
