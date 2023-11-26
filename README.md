@@ -26,7 +26,29 @@
 
 3. Race conditions: a healthy delay between the launching of chromium and the starting of the script.
 
-## Testing usage
+## Raw usage
+
+I'm testing the concept on turbo-src. For your own experimental needs I suggest to modify `scripts/container_screenshots.py` for your UI tasks and screenshot tempo or edit `entrypoint.sh` to run some other script you develop. You can always just use this as inspiration or fork for your own specific needs.
+
+Build.
+
+```
+docker build -t viatui .
+```
+
+Run the script defined in `entrypoint.sh`, currently `scripts/container_screenshot.py`
+
+```
+docker run -it \
+    -e DISPLAY=:1 \
+    --volume /tmp/.X11-unix:/tmp/.X11-unix \
+    --volume /var/run/dbus:/var/run/dbus \
+    --volume $(pwd):/app \
+    --privileged \
+    viatui
+```
+
+## Testing usage (turbo-src application)
 
 You must allow viatui to due its tasks up to repo creation. After that, the backend e2e tests can be ran.
 
