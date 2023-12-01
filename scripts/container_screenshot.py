@@ -1,11 +1,12 @@
 import pyautogui
 import time
+import os
 from modules.screenshot_grid import create_screenshot_with_grid
 from modules.screenshot_grid import create_screenshot
 from modules.get_from_viatuix_config import get_from_viatuix_config
 
 # Set the DISPLAY environment variable if necessary
-# os.environ['DISPLAY'] = ':1'
+os.environ['DISPLAY'] = ':1'
 
 if __name__ == '__main__':
   # Click on settings menu (triple dots in a row)
@@ -99,6 +100,7 @@ if __name__ == '__main__':
   pyautogui.moveTo(200, 75)
   pyautogui.click()
   pyautogui.typewrite(login_page)
+  time.sleep(2)
   pyautogui.press('enter')
   time.sleep(5)
   screenshot = create_screenshot_with_grid(100)
@@ -137,7 +139,7 @@ if __name__ == '__main__':
   screenshot.save('chromium-nix-screenshots/17.png')
 
   # Go to pulls page
-  pyautogui.moveTo(200, 75)
+  pyautogui.moveTo(300, 100)
   pyautogui.click()
   pulls_page = get_from_viatuix_config('viatuix.json', 'url3')
   pyautogui.typewrite(pulls_page)
@@ -198,12 +200,6 @@ if __name__ == '__main__':
   screenshot = create_screenshot_with_grid(100)
   screenshot.save('chromium-nix-screenshots/26.png')
 
-  # Load vote buttons (reload page)
-  pyautogui.hotkey('ctrl', 'r')
-  time.sleep(7)
-  screenshot = create_screenshot_with_grid(100)
-  screenshot.save('chromium-nix-screenshots/26.png')
-
   # Scroll down to see all vote buttons
   pyautogui.scroll(-2)
   time.sleep(3)
@@ -231,6 +227,12 @@ if __name__ == '__main__':
   screenshot = create_screenshot()
   screenshot.save('chromium-nix-screenshots/30.png')
 
+  # Load vote buttons (reload page)
+  pyautogui.hotkey('ctrl', 'r')
+  time.sleep(7)
+  screenshot = create_screenshot_with_grid(100)
+  screenshot.save('chromium-nix-screenshots/31.png')
+
   #######################################################
   # Useful info
   ######################################################
@@ -240,3 +242,16 @@ if __name__ == '__main__':
   #pyautogui.moveTo(625, 100)
   #pyautogui.click()
 
+  ## Right click on turbo-src extension
+  #pyautogui.moveTo(825, 100)
+  #pyautogui.rightClick()
+  #time.sleep(3)
+  #screenshot = create_screenshot_with_grid(100)
+  #screenshot.save('chromium-nix-screenshots/26b.png')
+
+  ## Inspect popup
+  #pyautogui.moveTo(800, 350)
+  #pyautogui.click()
+  #time.sleep(3)
+  #screenshot = create_screenshot_with_grid(100)
+  #screenshot.save('chromium-nix-screenshots/26c.png')

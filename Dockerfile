@@ -74,13 +74,19 @@ RUN ~/.local/bin/poetry install
 ENV DISPLAY=:1
 
 # Make port 5900 available to the world outside this container
-#EXPOSE 5900
 
 # Run x11vnc when the container launches
 #CMD Xvfb :1 -screen 0 1024x768x16 & x11vnc -display :1 -forever
 
 #RUN apt-get update && apt-get install -y dbus-x11 x11-apps
 #RUN dbus-uuidgen > /var/lib/dbus/machine-id
+
+RUN nix-env -f /nixpkgs -iA nodejs
+
+# To run chrome-remote-interface for debug
+RUN npm install chrome-remote-interface
+
+EXPOSE 5900
 
 # Copy the entrypoint script into the container
 COPY entrypoint.sh /entrypoint.sh

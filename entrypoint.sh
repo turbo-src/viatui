@@ -18,12 +18,12 @@ fluxbox &
 export DISPLAY=:1
 
 # Start Chromium in the background
-chromium --no-sandbox --disable-dbus --disable-gpu --disable-software-rasterizer --disable-dev-shm-usage &
+chromium --ignore-certificate-errors --ignore-certificate-errors-skpki-list --allow-insecure-host --remote-debugging-port=9222 --no-sandbox --disable-web-security --user-data-dir="/tmp/chromium_dev_session" --disable-dbus --disable-gpu --disable-software-rasterizer --disable-dev-shm-usage &
 
-sleep 15
+#sleep 15
 
 # Run script to interact with Chromium. Saves to 'chromium-nix-screenshots/'
-~/.local/bin/poetry run python scripts/container_screenshot.py &
+#~/.local/bin/poetry run python scripts/container_screenshot.py &
 
 # Keep the script running
 exec "$@"
