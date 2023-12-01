@@ -6,3 +6,4 @@ fluxbox/
 viatuix.json
 dist-chrome-extension/
 chromium-nix-screenshots/
+node_modules/
