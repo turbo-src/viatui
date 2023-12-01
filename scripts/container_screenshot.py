@@ -206,32 +206,32 @@ if __name__ == '__main__':
   screenshot = create_screenshot_with_grid(100)
   screenshot.save('chromium-nix-screenshots/27.png')
 
-  ## Click vote button for pull request 4
-  pyautogui.moveTo(100, 355)
-  pyautogui.click()
-  time.sleep(3)
-  screenshot = create_screenshot_with_grid(100)
-  screenshot.save('chromium-nix-screenshots/28.png')
+  ### Click vote button for pull request 4
+  #pyautogui.moveTo(100, 355)
+  #pyautogui.click()
+  #time.sleep(3)
+  #screenshot = create_screenshot_with_grid(100)
+  #screenshot.save('chromium-nix-screenshots/28.png')
 
-  # Vote yes
-  pyautogui.moveTo(400, 400)
-  pyautogui.click()
-  time.sleep(3)
-  screenshot = create_screenshot_with_grid(100)
-  screenshot.save('chromium-nix-screenshots/29.png')
+  ## Vote yes
+  #pyautogui.moveTo(400, 400)
+  #pyautogui.click()
+  #time.sleep(3)
+  #screenshot = create_screenshot_with_grid(100)
+  #screenshot.save('chromium-nix-screenshots/29.png')
 
-  # Get out of modal
-  pyautogui.moveTo(900, 300)
-  pyautogui.click()
-  time.sleep(3)
-  screenshot = create_screenshot()
-  screenshot.save('chromium-nix-screenshots/30.png')
+  ## Get out of modal
+  #pyautogui.moveTo(900, 300)
+  #pyautogui.click()
+  #time.sleep(3)
+  #screenshot = create_screenshot()
+  #screenshot.save('chromium-nix-screenshots/30.png')
 
-  # Load vote buttons (reload page)
-  pyautogui.hotkey('ctrl', 'r')
-  time.sleep(7)
-  screenshot = create_screenshot_with_grid(100)
-  screenshot.save('chromium-nix-screenshots/31.png')
+  ## Load vote buttons (reload page)
+  #pyautogui.hotkey('ctrl', 'r')
+  #time.sleep(7)
+  #screenshot = create_screenshot_with_grid(100)
+  #screenshot.save('chromium-nix-screenshots/31.png')
 
   #######################################################
   # Useful info
