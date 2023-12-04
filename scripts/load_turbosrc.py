@@ -14,49 +14,49 @@ if __name__ == '__main__':
   pyautogui.click()
   time.sleep(3)
   screenshot = create_screenshot_with_grid(50)
-  screenshot.save('chromium-nix-screenshots/1.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-1.png')
 
   # Click on settings menu (triple dots in a row)
   pyautogui.moveTo(995, 95)
   pyautogui.click()
   time.sleep(3)
   screenshot = create_screenshot_with_grid(50)
-  screenshot.save('chromium-nix-screenshots/2.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-2.png')
 
   # Click on `Extensions`
   pyautogui.moveTo(725, 312)
   pyautogui.click()
   time.sleep(3)
   screenshot = create_screenshot_with_grid(50)
-  screenshot.save('chromium-nix-screenshots/3.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-3.png')
 
   # Click on `Manage Extensions`
   pyautogui.moveTo(550, 312)
   pyautogui.click()
   time.sleep(3)
   screenshot = create_screenshot_with_grid(50)
-  screenshot.save('chromium-nix-screenshots/4.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-4.png')
 
   # Switch 'Developer Mode' on
   pyautogui.moveTo(1000, 200)
   pyautogui.click()
   time.sleep(3)
   screenshot = create_screenshot_with_grid(50)
-  screenshot.save('chromium-nix-screenshots/5.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-5.png')
 
   # Click 'Load unpacked'
   pyautogui.moveTo(100 , 250)
   pyautogui.click()
   time.sleep(3)
   screenshot = create_screenshot_with_grid(50)
-  screenshot.save('chromium-nix-screenshots/6.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-6.png')
 
   # Click 'app' directory
   pyautogui.moveTo(50, 150)
   pyautogui.click()
   time.sleep(3)
   screenshot = create_screenshot_with_grid(50)
-  screenshot.save('chromium-nix-screenshots/7.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-7.png')
 
   # Click 'dist-chrome-extension
   pyautogui.moveTo(200, 130)
@@ -67,33 +67,33 @@ if __name__ == '__main__':
   pyautogui.press('enter')
   time.sleep(3)
   screenshot = create_screenshot_with_grid(50)
-  screenshot.save('chromium-nix-screenshots/8.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-8.png')
 
   # Click extension button
   pyautogui.moveTo(850, 100)
   pyautogui.click()
   time.sleep(3)
   screenshot = create_screenshot_with_grid(100)
-  screenshot.save('chromium-nix-screenshots/9.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-9.png')
 
   # Pin turbo-src extension
   pyautogui.moveTo(800, 250)
   pyautogui.click()
   time.sleep(3)
   screenshot = create_screenshot_with_grid(100)
-  screenshot.save('chromium-nix-screenshots/10.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-10.png')
 
   # Get out of Extensions pin selection box
   pyautogui.press('esc')
   time.sleep(3)
   screenshot = create_screenshot_with_grid(100)
-  screenshot.save('chromium-nix-screenshots/11.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-11.png')
 
   # Make a new browser tab
   pyautogui.hotkey('ctrl', 't')
   time.sleep(3)
   screenshot = create_screenshot_with_grid(100)
-  screenshot.save('chromium-nix-screenshots/12.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-12.png')
 
   # Type in github url into bar
   login_page = get_from_viatuix_config('viatuix.json', 'url2')
@@ -104,7 +104,7 @@ if __name__ == '__main__':
   pyautogui.press('enter')
   time.sleep(5)
   screenshot = create_screenshot_with_grid(100)
-  screenshot.save('chromium-nix-screenshots/13.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-13.png')
 
   # Type in username
   username = get_from_viatuix_config('viatuix.json', 'username')
@@ -113,7 +113,7 @@ if __name__ == '__main__':
   pyautogui.typewrite(username)
   time.sleep(5)
   screenshot = create_screenshot_with_grid(100)
-  screenshot.save('chromium-nix-screenshots/14.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-14.png')
 
   # Type in password
   password = get_from_viatuix_config('viatuix.json', 'password')
@@ -122,21 +122,21 @@ if __name__ == '__main__':
   pyautogui.typewrite(password)
   time.sleep(5)
   screenshot = create_screenshot_with_grid(100)
-  screenshot.save('chromium-nix-screenshots/15.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-15.png')
 
   # Submit username and password
   pyautogui.moveTo(502, 477)
   pyautogui.click()
   time.sleep(5)
   screenshot = create_screenshot_with_grid(100)
-  screenshot.save('chromium-nix-screenshots/16.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-16.png')
 
   # Don't save password
   pyautogui.moveTo(700, 400)
   pyautogui.click()
   time.sleep(5)
   screenshot = create_screenshot_with_grid(100)
-  screenshot.save('chromium-nix-screenshots/17.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-17.png')
 
   # Go to pulls page
   pyautogui.moveTo(300, 100)
@@ -146,62 +146,62 @@ if __name__ == '__main__':
   pyautogui.press('enter')
   time.sleep(5)
   screenshot = create_screenshot_with_grid(100)
-  screenshot.save('chromium-nix-screenshots/18.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-18.png')
 
   # Click on turbo-src extension
   pyautogui.moveTo(825, 100)
   pyautogui.click()
   time.sleep(3)
   screenshot = create_screenshot_with_grid(100)
-  screenshot.save('chromium-nix-screenshots/19.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-19.png')
 
   # Click turbo-src 'continue with' button
   pyautogui.moveTo(600, 375)
   pyautogui.click()
   time.sleep(3)
   screenshot = create_screenshot_with_grid(100)
-  screenshot.save('chromium-nix-screenshots/20.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-20.png')
 
   # Switch back to target page
   pyautogui.hotkey('alt', '2')
   screenshot = create_screenshot_with_grid(100)
-  screenshot.save('chromium-nix-screenshots/21.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-21.png')
 
   # Click on turbo-src extension
   pyautogui.moveTo(825, 100)
   pyautogui.click()
   time.sleep(3)
   screenshot = create_screenshot_with_grid(100)
-  screenshot.save('chromium-nix-screenshots/22.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-22.png')
 
   # Click turbo-src 'continue to add repo to TurboSrc' button
   pyautogui.moveTo(700, 450)
   pyautogui.click()
   time.sleep(3)
   screenshot = create_screenshot_with_grid(100)
-  screenshot.save('chromium-nix-screenshots/23.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-23.png')
 
   ## Click turbo-src 'create repo' button
   #pyautogui.moveTo(700, 500)
   #pyautogui.click()
   #time.sleep(3)
   #screenshot = create_screenshot_with_grid(100)
-  #screenshot.save('chromium-nix-screenshots/24.png')
+  #screenshot.save('chromium-nix-screenshots/tsrc-create-repo.png')
 
   # Clear turbo-src popup
   pyautogui.press('esc')
   time.sleep(3)
   screenshot = create_screenshot_with_grid(100)
-  screenshot.save('chromium-nix-screenshots/25.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-24.png')
 
   # Load vote buttons (reload page)
   pyautogui.hotkey('ctrl', 'r')
   time.sleep(7)
   screenshot = create_screenshot_with_grid(100)
-  screenshot.save('chromium-nix-screenshots/26.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-25.png')
 
   # Scroll down to see all vote buttons
   pyautogui.scroll(-2)
   time.sleep(3)
   screenshot = create_screenshot_with_grid(100)
-  screenshot.save('chromium-nix-screenshots/27.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-26.png')
