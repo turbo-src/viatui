@@ -1,3 +1,14 @@
+import pyautogui
+import time
+import os
+from modules.screenshot_grid import create_screenshot_with_grid
+from modules.screenshot_grid import create_screenshot
+from modules.get_from_viatuix_config import get_from_viatuix_config
+
+# Set the DISPLAY environment variable if necessary
+os.environ['DISPLAY'] = ':1'
+
+if __name__ == '__main__':
   # Make a new browser tab
   pyautogui.hotkey('ctrl', 't')
   time.sleep(3)
