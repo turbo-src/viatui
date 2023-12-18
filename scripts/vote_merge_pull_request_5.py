@@ -28,4 +28,4 @@ if __name__ == '__main__':
   pyautogui.hotkey('ctrl', 'r')
   time.sleep(5)
   screenshot = create_screenshot_with_grid(50)
-  screenshot.save('chromium-nix-screenshots/vote_merge_pull_request_5.png')
+  screenshot.save('chromium-nix-screenshots/tsrc-29.png')
