@@ -11,7 +11,7 @@ os.environ['DISPLAY'] = ':1'
 
 if __name__ == '__main__':
   # Click on pull request 5.
-  pyautogui.moveTo(100, 285)
+  pyautogui.moveTo(100, 350)
   pyautogui.click()
   time.sleep(5)
   screenshot = create_screenshot_with_grid(50)
